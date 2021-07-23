@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>password generator</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <h2>Password generator</h2>
+            <div class="result-container"> 
+                <span id="result"></span>
+                <button class="btn" id="clipboard">
+                    <i class="far fa-clipboard"></i>
+                </button>
+            </div>
+            <div class="settool">
+            <div class="setting">
+            <label for="length" >Password length</label>
+            <input type="number" id="length" min="4" max="20" value="20">   
+            </div>
+            <div class="setting">
+                <label for="uppercase">Include the uppercase letters</label>
+            <input type="checkbox" id="uppercase" checked>
+            </div>
+            <div class="setting">
+                <label for="lowercase">Include the lowercase</label>
+                <input type="checkbox" id="lowercase" checked>
+            </div>
+            <div class="setting">
+                <label for="numbers">Include Numbers</label>
+                <input type="checkbox" id="numbers" checked>
+            </div>
+            <div class="setting">
+                <label for="symbols">Include symbols</label>
+                <input type="checkbox" id="symbols" checked>
+            </div>
+            </div>
+        <button class="btn btn-large" id="generate">Generate password</button>
+        </div>
+        <script src="index.js"></script>
+
+
+    </body>
+</html>
